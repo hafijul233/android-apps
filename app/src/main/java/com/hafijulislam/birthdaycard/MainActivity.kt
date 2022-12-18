@@ -26,9 +26,19 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             val dice: Dice = Dice(6)
             val randomNumber: Int = dice.roll()
+            val luckyNumber = 3
+
             val randomTextView: TextView = findViewById(R.id.textView)
+
             randomTextView.text = randomNumber.toString()
-            val toast = Toast.makeText(this, "Your ${dice.sides} sided dice rolled ${randomNumber}!", Toast.LENGTH_LONG)
+
+            val message: String = if (randomNumber == luckyNumber) {
+                "It's your Lucky number \uD83E\uDD73"
+            } else {
+                "\uD83C\uDFB2 Dice rolled ${randomNumber}"
+            }
+
+            val toast = Toast.makeText(this, message, Toast.LENGTH_LONG)
             toast.show()
         }
     }
