@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Birthday Card</string>
+    <string name="app_name">Dice Roller</string>
     <string name="happy_birth_day_hridoy">Happy Birthday,Hridoy</string>
     <string name="from_google">From Google</string>
+    <string name="roll">Roll</string>
+    <string name="result" />
 </resources>
