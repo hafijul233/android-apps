@@ -4,4 +4,5 @@
     <string name="from_google">From Google</string>
     <string name="roll">Roll</string>
     <string name="result" />
+    <string name="todo">TODO</string>
 </resources>
