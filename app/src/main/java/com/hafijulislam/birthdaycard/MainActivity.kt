@@ -45,7 +45,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateImage(number: Int) {
+
         val diceImage: ImageView = findViewById(R.id.imageView3)
+
+        diceImage.contentDescription = number.toString()
+
         (when (number) {
             1 -> diceImage.setImageResource(R.drawable.dice_1)
             2 -> diceImage.setImageResource(R.drawable.dice_2)
